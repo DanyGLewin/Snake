@@ -137,7 +137,7 @@ def main():
                 fps = min(fps * 1.15, fps + 1, config.MAX_FPS)
 
             if food_type == config.SHORT:  # shorten the snake
-                for i in range((len(body_pos) / 2) - 1):
+                for i in range(len(body_pos) / 2):
                     body_pos.popleft()
 
             if food_type == config.SLOW:  # slow down the snake
